@@ -1,0 +1,442 @@
+body{
+    background-color: rgb(60, 60, 60);/*rgb(76, 84, 105)*/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    margin: 0em;
+    
+}
+a{
+    text-decoration: none;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+/*Barra scrollbar*/
+.barra::-webkit-scrollbar {
+    background:  rgb(60, 60, 60);
+    width: 1vw;     /* Tamaño del scroll en vertical */
+    height: 0.5vh;    /* Tamaño del scroll en horizontal */
+}
+/*Barra scrollbar cuando pasa el cursor por encima*/
+.barra::-webkit-scrollbar:hover{
+    background:rgb(255, 239, 0);
+}
+/* Barra movil */
+.barra::-webkit-scrollbar-thumb {
+    background:rgb(255, 239, 0);
+    height: 5m;
+    border-radius: 4px;
+    border:1px solid rgb(60, 60, 60);
+}
+
+/* Barra movil con el cursor encima */
+.barra::-webkit-scrollbar-thumb:hover {
+    background:  whitesmoke;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Barra movil cuando la utilicimos para mover la página */
+.barra::-webkit-scrollbar-thumb:active {
+    background-color: rgb(60, 60, 60);
+}
+
+
+/*-----------------------------CABECERA---------------------------------*/
+header{
+    width: 100%;
+    height: 15%;
+    background-color: black;
+    text-align: center;
+}
+.rotulo{
+    width: 30%;
+}
+/*-----------------------------NAVEGADOR---------------------------------*/
+nav{
+    display:flex;
+    padding-top: 0.5em; 
+    width: 100%;
+    height: 5%;
+    font-size: 1.25em;  
+}
+nav>ul{
+    list-style: none;
+    width: 100%; 
+    margin: 0%;
+}
+nav>ul>li{
+    display: inline-block;
+    text-decoration: none;
+    width: 32%; 
+    padding-top: 0.5em;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+nav a:hover{/*Para que el link cambie cuando se pase el cursor por encima*/
+    color:rgb(255, 239, 0);
+}
+
+/* BOTON DESPLEGABLE */ 
+.home{/*Clase de la imagen del botón desplegable*/
+    height:1.5em;
+    padding-bottom: 0%;
+}
+/*Botón desplegable*/
+.dropdown-button { 
+    background-color: rgb(60, 60, 60);
+    color: white;   
+    font-size: 1.25em; 
+    border: none; 
+} 
+.dropdown { 
+    position: relative; 
+    width: 20%;
+    text-align: left;
+} 
+/* Contenido de la lista desplegable (Hidden by Default) */ 
+.dropdown-list { 
+    display: none; 
+    position: absolute; 
+    font-size: 0.75em; 
+    background-color: #f1f1f1; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; 
+} 
+/* Hipervínculos dentro de la lista */ 
+.dropdown-list a { 
+    color: black; 
+    padding: 1em 1em; 
+    text-decoration: none; 
+    display: block; 
+    font-family: verdana; 
+} 
+/* Cambia de color los links de la lista cuando se pasa el cursor sobre ellos */ 
+.dropdown-list a:hover { 
+    background-color:  rgb(60, 60, 60); 
+} 
+/* Muestre la lista cuando se pasa el cursor sobre ella */ 
+.dropdown:hover .dropdown-list { 
+    display: block; 
+} 
+
+/*-----------------------------MAIN---------------------------------*/
+main{
+
+    display:list-item;
+    /*padding-bottom: 1%;*/
+    width: 100%;
+    height: 75%;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+.formulario{
+    display:inline-flex;
+    margin: 0%;
+}
+section{
+    width: 70%;   
+}
+aside{
+    width: 30%;
+}
+article{
+    padding-top: 5%;
+}
+p{
+    width: 50%;
+    text-align: justify;
+    margin:auto;
+    font-size: 1.25em; 
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+iframe{
+    border: none;
+    overflow-y: none;
+    margin:0%;
+}
+table{
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: left;
+}
+
+/*FORMULARIO*/
+select{
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(255, 239, 0);
+    font-weight: bold;
+    border-radius: 4px;
+    size: 2em;
+}
+input{
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(255, 239, 0);
+    font-weight: bold;
+    border-radius: 4px;
+}
+input[type="radio"]{
+    accent-color:rgb(255, 239, 0);
+}
+input[type="checkbox"]{
+    accent-color:rgb(255, 239, 0);
+}
+input[type="submit"]:hover{
+    scale:1.2;
+}
+input[type="reset"]:hover{
+    scale:1.2;
+}
+textarea{
+    width: 35vw;
+    height: 17vh;
+    overflow-y:scroll;
+    resize: none;
+    background:rgb(255, 239, 0);
+    border-radius: 4px;
+}
+
+/*Botón Amarillo*/
+.boton{
+    display:inline-block;
+    width: 10em;
+    height: 2em;
+    padding-top: .5em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    text-align: center;
+    color:black;
+    font-size: 1em;
+    background-color:rgb(255, 239, 0);
+    border-radius: 1em;
+    border: 2px solid black;
+}
+.boton:hover{
+    background: rgb(255, 239, 0);
+    border: 2px solid rgb(255, 239, 0);
+    box-shadow: 0px 0px 4px 4px rgb(221, 215, 129);
+    font-weight: bold;
+}
+.flecha:hover{
+    scale: 1.2;
+}
+
+/*-----------------------------FOOTER---------------------------------*/
+footer{
+    background-image: url(../Imagenes/Escaperoom.jpg);
+    background-color: black;
+    background-position: right bottom ;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding-top: 0.5%;
+    padding-bottom: 0.1%;
+    width: 100%;
+    height: 5%;   
+}
+.RRSS{
+    height: 2em;
+    padding-left: 1%;
+}
+.RRSS:hover{
+    scale:1.2;
+}
+
+/*-----------------------------JUEGO---------------------------------*/
+
+.juego{
+    display:inline-flex;
+    width: 100%;
+    /*min-height: 50vh;*/
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+.pistas{
+    width:14%; 
+    text-align: justify;
+    padding-left: 1%;
+    font-size: 1em;
+    
+}
+.pistaOculta{
+    color:rgb(60, 60, 60);
+}
+.pistaOculta:hover{
+    color:rgb(255, 239, 0);
+}
+.aside2{
+    width:15%; 
+    padding-right: 1%;
+}
+/*Juego de la palabra escondida*/
+.cuadro {
+    background:rgb(60, 60, 60);
+    width:8vw;
+    margin:0.25%;
+    display:inline-block;
+    text-align:center;
+    padding:2% 2%;
+    color:#fff;
+  }
+.cuadro:hover {
+    background: url(../Imagenes/historia.jpg);
+    background-attachment: fixed;
+    background-position:50% 80%;
+    background-repeat: no-repeat;
+    background-size:auto 50vh;
+}
+/*Juego numeros*/
+.numeros{
+    width: 100%;
+    height: 100%;
+    min-height: 60vh;
+    background-image: url(../Imagenes/numeros2.jpg);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size:40vw auto;
+
+}
+.numeros:hover>img{
+    display: none;
+}
+.numeros>img{
+    width: 40vw;
+}
+
+/*Juego caracteres*/
+.caracter{
+    width: 50vw;
+    height: 50vh;
+    font-size: 2em;
+    text-align: center;
+}
+.caracter>td{
+    width: 5vw;
+}
+
+/*Para el div contenedor de todo*/
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  /*Para el div que contiene el tooltip emergente*/
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(255, 239, 0);
+    color:black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+  /*Para que tenga un triangulo a modo de bocadillo*/
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(255, 239, 0) transparent transparent transparent;
+}
+  /*Para que sea visible el texto y el bocadillo del tooltip cuando pase el cursor*/
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  /*Final*/
+.contrasena{
+    width: 100%;
+    min-height: 23vh;
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding-top: 1%;
+}
+
+
+/*-----------------------------MEDIAS QUERY---------------------------------*/
+@media only screen and (max-width: 640px) {/*only es que sea solo para pantallas que cumpla con esas condiciones*/
+p{
+    width: 80%;
+}
+nav>ul>li{
+    font-size: 0.75em;
+    padding: 0%;
+    margin: 0%;
+    text-align: center;
+}
+.dropdown{
+    scale:80%;
+}
+.formulario{
+    display:list-item;
+    margin: 0%;
+ }
+.formulario>table>form{
+    font-size: 0.75em;
+}
+textarea{
+    width: 95vw;
+    height: 20vh;
+}
+aside{
+    width: 100%;
+}
+section{
+    width: 100%;
+}
+.juego{
+    display:list-item; 
+}
+.pistas{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20%;
+    font-size: 1.5em;
+}
+.aside2{
+    display: inline-flex;
+    justify-content:space-evenly;
+    width: 100%;
+}
+.boton{
+    display:inline-block;
+    width: 25vw;
+    height: 3vh;
+    font-size: 1.25em;
+    margin-bottom: 1em;
+    margin-top: 1em;   
+}
+.cuadro:hover {
+    background-position:50% 65%;
+    background-size:70vw auto;
+}
+.numeros{
+    min-height: 50vh;
+    background-size: 80vw auto;
+}
+.numeros>img{
+    width: 80vw;
+}
+.solCaracter{
+    font-size: 2em;
+}
+.contrasena{
+    min-height: 29vh;
+}  
+.mapa{
+    width:80vw; 
+    height:40vh;
+} 
+}
